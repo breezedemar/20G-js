@@ -6,7 +6,7 @@
 //pedir al usuario 3 numeros 
 //imprimir en consola cual es el mayor de todos 
 	
-let numero1 = prompt("Ingresa el primer numero")
+/*let numero1 = prompt("Ingresa el primer numero")
 let numero2 = prompt("Ingresa el segundo numero")
 let numero3 = prompt("Ingresa el tercer numero")
 
@@ -20,7 +20,7 @@ let numero3 = prompt("Ingresa el tercer numero")
         console.log("El numero 3 es mayor")
     }else {
         console.log("Todos los numeros son iguales")
-    }
+    }*/
 
 // !Practica 2
 // !Identificar el numero mayor de dos
@@ -68,3 +68,47 @@ if(a>b){
 } else{
     console.log(`Ambos numeros son iguales por lo que el resultado es el siguiente: ${a*b}`)
 }*/
+
+
+//! Sesion 04 JavaScript 
+
+// !Practica 1
+
+//Realiza una calculadora usando un switch
+//Dale la opcion al usuario de seleccionar entre algunas operaciones (suma, resta....)
+//Pidele dos numeros y aplica la operacion correspendiente
+//Regresa el resultado
+
+let operacion = prompt("Selecciona una opción suma resta multiplicación division")
+
+let num1 = parseInt(prompt("Ingresa el numero 1"));
+let num2 = parseInt(prompt("Ingresa el numero 2"));
+
+switch(operacion){
+    case "suma":
+    let suma = num1+num2
+    let messageSuma = `la suma de los dos numeros es ${suma}`
+    window.alert(messageSuma)
+    break
+
+    case "resta":
+    let resta=num1-num2
+    let messageResta = `la resta de los dos numeros es ${resta}`
+    window.alert(messageResta)
+    break
+
+    case "multiplicacion":
+        let multiplicacion=num1*num2
+        let messageMulti = `la multiplicacion de los dos numeros es ${multiplicacion}`
+        window.alert(messageMulti)
+        break
+
+    case "division": 
+        let division=num1/num2
+        let messageDivision = `la division de los dos numeros es ${division}`
+        window.alert(messageDivision)
+        break
+        default:
+            console.log('Debes seleccionar una opcion')
+            break
+}
