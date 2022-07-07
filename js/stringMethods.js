@@ -37,7 +37,7 @@
 // Trim()
     // Limpia el string de espacio al final y el inicio
 
-let koder = 'hola koder'
+/*let koder = 'hola koder'
 // let vocales = koder.match(/[aeiou]/gi)
  
 
@@ -45,4 +45,4 @@ console.log(koder.search(''))
 console.log(vocales.length)
 
 
-['a']
+['a']*/

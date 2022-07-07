@@ -79,7 +79,7 @@ if(a>b){
 //Pidele dos numeros y aplica la operacion correspendiente
 //Regresa el resultado
 
-let operacion = prompt("Selecciona una opción suma resta multiplicación division")
+/*let operacion = prompt("Selecciona una opción suma resta multiplicación division")
 
 let num1 = parseInt(prompt("Ingresa el numero 1"));
 let num2 = parseInt(prompt("Ingresa el numero 2"));
@@ -111,4 +111,35 @@ switch(operacion){
         default:
             console.log('Debes seleccionar una opcion')
             break
+}*/
+
+
+
+//! Sesion 05 JavaScript 
+
+// !Practica 1
+
+//imprimir vocales de string usando for loop
+//Usando solo ciclos y condicionales
+
+
+// !Practica 2
+
+/*Practica2
+imprimir solo las consonantes de un string usando for loop
+solo ciclos y condicionales */
+
+
+// !Practica 3
+/*Practica3
+Pedir al usuario un numero del 1 al 10 e imprimir la tabla de multiplicar de ese número
+Usando loops*/
+
+let numero= parseInt(prompt("Ingresa un numero del 1 al 10"))
+
+for (let i=0; i<=10; i++){
+    let resultado = numero*[i]
+    console.log(`${numero} x ${i} = ${resultado}`)
 }
+
+
