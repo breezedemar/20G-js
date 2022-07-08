@@ -135,11 +135,94 @@ solo ciclos y condicionales */
 Pedir al usuario un numero del 1 al 10 e imprimir la tabla de multiplicar de ese número
 Usando loops*/
 
-let numero= parseInt(prompt("Ingresa un numero del 1 al 10"))
+/*let numero= parseInt(prompt("Ingresa un numero del 1 al 10"))
 
 for (let i=0; i<=10; i++){
     let resultado = numero*[i]
     console.log(`${numero} x ${i} = ${resultado}`)
+}*/
+
+
+//! Sesión 06 JavaScript 
+//? Practica 1 
+/** Declarar y invocar una funcion cualquiera
+Recomendacion: Usar alguno de los ejercicios que se llevaron acabo en las clases anteriores */
+
+/*let gradosCelcius = prompt("Cuantos grados hay en tu ciudad")
+const fahrenheit = (9/5 * gradosCelcius) + 32
+
+  function functionCelcius(){
+       console.log(`la temperatura es: ${fahrenheit} que hay en tu localidad`);
+   }
+
+   functionCelcius()*/
+
+   
+//? Practica 2
+/** Declarar una función que tome uno o más argumentos y haga un retorno, Pueden llevar a cabo alguno de los ejercicios de la prácticas de la sesión 1 o 2 o 3
+Almacenar el retorno en una variable y imprimir un mensaje usando esa variable -> template literals */
+
+
+/*let base = parseFloat(prompt("Ingresa la base"))
+let altura = parseFloat(prompt("Ingresa la altura"))
+
+
+function numeros(base,altura){
+   area = base * altura / 2
+   return console.log(`El area del triangulo es "${area}"`)
 }
 
+numeros(10,12)
+*/
+//! Sesión 07 JavaScript 
 
+/*Practica
+tomar los tres ejercicios y factorizarlos como funciones
+Condiciones, tiene argumentos y tiene que hacer un return*/
+
+//? Ejercicio 1
+/**
+* Escribir un programa de arroje la suma de los múltiplos de 3, 5 y 7
+* que hay entre 1 y 100
+* Resolver con cualquiera de: For, While o do While
+*/
+
+
+function multiplo(){
+let suma = 0
+for(let i=1; i<=100; i++){
+    
+    if(i%3 === 0 && i%5 === 0 && i%7===0){
+         suma += i
+    }
+}
+return suma
+
+}
+
+console.log(multiplo()); 
+
+
+//? Ejercicio 2
+/**
+* Pedir el usuario 1 numero entre 1 y 100
+* sumar todos los números entre el 1 y este numero
+* Mandar un alert con el  total
+* Resolver con cualquiera de: For, While y do While
+* p.ej. 5
+* ->  15
+*/
+
+//let numA = parseInt(prompt("Ingrese un numero entre 1 y 100"))
+
+//? Ejercicio 3
+/**
+* pedir una oracion al usuario
+* Contar las letras "a" y "e" y espacios,
+* Resolver con cualquier de  For, While y do While
+*
+* p.ej. 'hola kodErs'
+* ->  A -> 1
+* ->  E -> 1
+* ->  Espacios -> 1
+*/
