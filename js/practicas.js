@@ -158,22 +158,33 @@ const fahrenheit = (9/5 * gradosCelcius) + 32
    functionCelcius()*/
 
    
-//? Practica 2
+//? Practica 2 - clase de funciones - sabado 😊🤣
 /** Declarar una función que tome uno o más argumentos y haga un retorno, Pueden llevar a cabo alguno de los ejercicios de la prácticas de la sesión 1 o 2 o 3
 Almacenar el retorno en una variable y imprimir un mensaje usando esa variable -> template literals */
 
 
-/*let base = parseFloat(prompt("Ingresa la base"))
-let altura = parseFloat(prompt("Ingresa la altura"))
+let base = parseFloat(prompt("Ingresa la base 😊"))
+let altura = parseFloat(prompt("Ingresa la altura 🤣"))
 
+let area=0
 
-function numeros(base,altura){
-   area = base * altura / 2
-   return console.log(`El area del triangulo es "${area}"`)
+//parametro 
+function numeros(base_parametro,altura_parametro){ 
+
+    if(base_parametro != 0 && altura_parametro !=0){
+        console.log("Valores aprobados")
+        area = base_parametro * altura_parametro / 2
+    } else{
+        console.log("No aprobado")
+    }
+
+    return console.log(`El area del triangulo es "${area}"`)
 }
 
-numeros(10,12)
-*/
+numeros(base,altura)//argumento
+
+
+
 //! Sesión 07 JavaScript 
 
 /*Practica
@@ -257,7 +268,7 @@ Enviar un mensaje a 20a-generación
 
 */ 
 
-let text = prompt("Ingresa un texto")
+/*let text = prompt("Ingresa un texto")
 
 const palindrom = (cadena) => {
     const cadenaReversed = cadena.split("").reverse().join("");
@@ -266,3 +277,32 @@ const palindrom = (cadena) => {
   }
 
 console.log(palindrom (text))
+*/
+
+/*let palabra = prompt('dame una palabra:');
+let reversa = "";
+for(let index=palabra.length-1; index>=0; index--)
+    {
+    reversa += palabra[index] // es la accion  que va a realizar
+    }
+console.log(reversa) //imprime en consola el resultado*/
+
+// palabra=nuevo
+// reversa =""
+// index=5-1
+// index=4 (4>0=true); (reversa=""+"o");
+// index=3 (3>0=true); (reversa="o"+"v");
+// index=2 (2>0=true); (reversa="ov"+"e");
+// index=1 (1>0=true); (reversa="ove"+"u");
+// index=0 (0>0=true); (reversa="oveu"+"n");
+
+
+// condicionales desde donde va iniciar y desde donde va terminar 
+
+let i
+for (i=5; i>0; i--){
+
+    console.log(`Tu valor es ${i}`) 
+
+}
+
