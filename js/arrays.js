@@ -7,29 +7,76 @@
  * 
  */
 
-/*let koder = "Breeze"
+/*
+
+let koder = "Breeze"
 let koder2 = "Cris"
 
 const koders = ["Breeze", "Cris"]
 
-console.log(koders[0])*/
+console.log(koders[0])
 
+*/
 
-const reactions = ['❤', '😆', '😡', '😢', '👍🏻'];
-reactions.unshift('🎉');
+// !Coleccion de datos, que puede alvergar otros datos (cualquier tipo)
 
-console.log(reactions)
+// let koder1 = "Mariana";
+// let koder2 = "Marco";
 
-let array1 = ["Nepal", 1];
+// const koders = [
+//   "Mariana",
+//   "Marco",
+//   "Chris",
+//   ["string", 123, undefined, [1, 2, 3]],
+// ];
 
-// returns string representation of array
-let stringFromArray = array1.toLocaleString();
+//! Bracket Notations -> []
+// !Indexesas -> 0,1,2,3.....
 
-console.log(stringFromArray);
+// console.log(koders[5][3][0], koders[1]);
 
-// Output:
-// Nepal,1
+//! Modificar un array
+// ! buena practica, declaralos con "const"
+// const koders = [
+//   "Mariana",
+//   "Marco",
+//   "Chris",
+//   ["string", 123, undefined, [1, 2, 3]],
+// ];
 
-/**
- * 
- */
+// koders[2] = "Christopher";
+
+// console.log(koders);
+
+//!
+// console.log(typeof koders);
+
+//! identificando un array
+// const koders = [
+//   "Mariana",
+//   "Marco",
+//   "Chris",
+//   ["string", 123, undefined, [1, 2, 3]],
+// ];
+
+// console.log(typeof koders); -> objeto
+// console.log(Array.isArray(koders));
+// console.log(koders instanceof Array);
+
+//! Metodos de Array
+// ? Push -> Agrega un elemento al final del array
+// const koders = ["Mariana", "Marco"];
+// koders.push("Luis");
+// console.log(koders);
+
+//? Pop -> Elimina el ultimo elemento de array
+// const koders = ["Mariana", "Marco"];
+// koders.pop();
+// console.log(koders);
+
+// ? Reverse ->
+// ? Copywhithing -> Copia un elemnto dentro del mimso array
+// const koders = ["Mariana", "Marco", "Chris", "Chris", "Chris", "Chris"];
+
+// console.log(koders.copyWithin(1, 3, 5));
+
