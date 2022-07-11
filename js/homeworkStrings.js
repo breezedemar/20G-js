@@ -1,14 +1,26 @@
 
 //! Homework Strings Methods 
 
-//? 1. Tomar un string del usuario -- Aun me falta esta tarea :/ 
+//? 1. Tomar un string del usuario 
 
-/*imprimir en consola el numero de caracteres que tiene esa cadea
-Imprimir cuantas vocales estan presentes
-Imprimri cada uno de los las palabras que hay ('hola koder') => ['hola', 'koders'}
+/*
+1. imprimir en consola el numero de caracteres que tiene esa cadena
+2. Imprimir cuantas vocales estan presentes
+3. Imprimri cada uno de los las palabras que hay ('hola koder') => ['hola', 'koders'}
 */
 
+// 1. imprimir en consola el numero de caracteres que tiene esa cadena
+let cadena = "Soy la brisa del mar de tus ojos"
+console.log(cadena.length)
 
+// 2. Imprimir cuantas vocales estan presentes
+let vocals = cadena.match(/[aeiou]/gi)
+
+console.log(vocals)
+
+// 3. Imprimri cada uno de los las palabras que hay ('hola koder') => ['hola', 'koders'}
+let letras = cadena.split(" ")
+console.log(letras)
 
 //? 2. Ejercicios de la documentación leida de Strings 
 //Pedir al usuario que ingrese una palabra 
@@ -27,16 +39,16 @@ if (vocales === null) {
 }
 
 
-
 //The search() Method
 
 let frase = 'Por que en los ojos correctos siempre seras arte'
 
 let buscar = frase.search('ojos')
+
 //window.alert(frase.concat(' --->  =', buscar))
 //console.log(buscar)
 
-window.alert(`La posición ${buscar}`)
+//window.alert(`La posición ${buscar}`)
 
 
 // StartsWith
